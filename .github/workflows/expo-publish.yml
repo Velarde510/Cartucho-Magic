@@ -1,9 +1,6 @@
-name: 📦 Auto‑publish to Expo
+name: Auto-publish to Expo
 
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
   publish:
