@@ -6,7 +6,8 @@
     "start": "expo start",
     "android": "expo run:android",
     "web": "expo start --web",
-    "build:web": "expo export:web"
+    "build:web": "expo export:web",
+    "deploy": "expo export:web && gh-pages -d web-build"
   },
   "dependencies": {
     "expo": "~51.0.0",
@@ -18,5 +19,8 @@
     "i18n-js": "^4.2.0",
     "expo-localization": "~14.1.0",
     "react-native-color-picker": "^0.6.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
