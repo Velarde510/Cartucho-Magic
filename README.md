@@ -1,0 +1,2 @@
+# Cartucho-Magic
+Life Counter
