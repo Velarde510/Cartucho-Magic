@@ -1,6 +1,9 @@
 name: Auto-publish to Expo
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   publish:
@@ -20,7 +23,6 @@ jobs:
       - name: Publish to Expo
         uses: expo/expo-github-action@v7
         with:
-          expo-version: latest
           expo-command: publish --non-interactive
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
